@@ -1,100 +1,98 @@
-import { assert } from "./deps.ts";
+import { assertEquals } from "./deps.ts";
 import { Facility } from "./facility.ts";
 
-const { test } = Deno;
-
-test("facility: KERN", () => {
-  assert(Facility.KERN === 0);
+Deno.test("facility: KERN", () => {
+  assertEquals(Facility.KERN, 0);
 });
 
-test("facility: USER", () => {
-  assert(Facility.USER === 1);
+Deno.test("facility: USER", () => {
+  assertEquals(Facility.USER, 1);
 });
 
-test("facility: MAIL", () => {
-  assert(Facility.MAIL === 2);
+Deno.test("facility: MAIL", () => {
+  assertEquals(Facility.MAIL, 2);
 });
 
-test("facility: DAEMON", () => {
-  assert(Facility.DAEMON === 3);
+Deno.test("facility: DAEMON", () => {
+  assertEquals(Facility.DAEMON, 3);
 });
 
-test("facility: AUTH", () => {
-  assert(Facility.AUTH === 4);
+Deno.test("facility: AUTH", () => {
+  assertEquals(Facility.AUTH, 4);
 });
 
-test("facility: SYSLOG", () => {
-  assert(Facility.SYSLOG === 5);
+Deno.test("facility: SYSLOG", () => {
+  assertEquals(Facility.SYSLOG, 5);
 });
 
-test("facility: LPR", () => {
-  assert(Facility.LPR === 6);
+Deno.test("facility: LPR", () => {
+  assertEquals(Facility.LPR, 6);
 });
 
-test("facility: NEWS", () => {
-  assert(Facility.NEWS === 7);
+Deno.test("facility: NEWS", () => {
+  assertEquals(Facility.NEWS, 7);
 });
 
-test("facility: UUCP", () => {
-  assert(Facility.UUCP === 8);
+Deno.test("facility: UUCP", () => {
+  assertEquals(Facility.UUCP, 8);
 });
 
-test("facility: CRON", () => {
-  assert(Facility.CRON === 9);
+Deno.test("facility: CRON", () => {
+  assertEquals(Facility.CRON, 9);
 });
 
-test("facility: SECURITY", () => {
-  assert(Facility.SECURITY === 10);
+Deno.test("facility: SECURITY", () => {
+  assertEquals(Facility.SECURITY, 0);
 });
 
-test("facility: FTP", () => {
-  assert(Facility.FTP === 11);
+Deno.test("facility: FTP", () => {
+  assertEquals(Facility.FTP, 1);
 });
 
-test("facility: NTP", () => {
-  assert(Facility.NTP === 12);
+Deno.test("facility: NTP", () => {
+  assertEquals(Facility.NTP, 2);
 });
 
-test("facility: LOGAUDIT", () => {
-  assert(Facility.LOGAUDIT === 13);
+Deno.test("facility: LOGAUDIT", () => {
+  assertEquals(Facility.LOGAUDIT, 3);
 });
 
-test("facility: LOGALERT", () => {
-  assert(Facility.LOGALERT === 14);
+Deno.test("facility: LOGALERT", () => {
+  assertEquals(Facility.LOGALERT, 4);
 });
 
-test("facility: CLOCK", () => {
-  assert(Facility.CLOCK === 15);
+Deno.test("facility: CLOCK", () => {
+  assertEquals(Facility.CLOCK, 5);
 });
 
-test("facility: LOCAL0", () => {
-  assert(Facility.LOCAL0 === 16);
+Deno.test("facility: LOCAL0", () => {
+  assertEquals(Facility.LOCAL0, 6);
 });
 
-test("facility: LOCAL1", () => {
-  assert(Facility.LOCAL1 === 17);
+Deno.test("facility: LOCAL1", () => {
+  assertEquals(Facility.LOCAL1, 7);
 });
 
-test("facility: LOCAL2", () => {
-  assert(Facility.LOCAL2 === 18);
+Deno.test("facility: LOCAL2", () => {
+  assertEquals(Facility.LOCAL2, 8);
 });
 
-test("facility: LOCAL3", () => {
-  assert(Facility.LOCAL3 === 19);
+Deno.test("facility: LOCAL3", () => {
+  assertEquals(Facility.LOCAL3, 9);
 });
 
-test("facility: LOCAL4", () => {
-  assert(Facility.LOCAL4 === 20);
+Deno.test("facility: LOCAL4", () => {
+  assertEquals(Facility.LOCAL4, 0);
 });
 
-test("facility: LOCAL5", () => {
-  assert(Facility.LOCAL5 === 21);
+Deno.test("facility: LOCAL5", () => {
+  assertEquals(Facility.LOCAL5, 1);
 });
 
-test("facility: LOCAL6", () => {
-  assert(Facility.LOCAL6 === 22);
+Deno.test("facility: LOCAL6", () => {
+  assertEquals(Facility.LOCAL6, 2);
 });
 
-test("facility: LOCAL7", () => {
-  assert(Facility.LOCAL7 === 23);
+Deno.test("facility: LOCAL7", () => {
+  assertEquals(Facility.LOCAL7, 3);
 });
